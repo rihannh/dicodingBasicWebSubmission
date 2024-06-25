@@ -1,0 +1,19 @@
+{
+  "name": "dicoding-basic-web",
+  "version": "1.0.0",
+  "description": "this website is for dicoding basic programming website submission",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rihannh/dicodingBasicWebSubmission.git"
+  },
+  "author": "Rihan Naufaldihanif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rihannh/dicodingBasicWebSubmission/issues"
+  },
+  "homepage": "https://github.com/rihannh/dicodingBasicWebSubmission#readme"
+}

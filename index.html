@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- * CSS -->
+    <link rel="stylesheet" href="./src/style/style.css">
+
+    <!-- * Title and Icon -->
+    <link rel="icon" href="public\logo-reactangle.png" />
+    <title>GDSC Universitas Sriwijaya</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./src/images/logo-with-text.png" alt="Logo">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Organizer</a></li>
+                <li><a href="#">Partner</a></li>
+            </ul>
+            <div class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                        stroke-width="32" d="M80 160h352M80 256h352M80 352h352" />
+                </svg>
+            </div>
+            <div class="login-search">
+                <input type="text" placeholder="Search for the event">
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <article id="hero">
+                <div class="hero-content">
+                    <h2>Welcome to the Google Developer Student Clubs Chapter Universitas Sriwijaya Official Page!</h2>
+                    <p>
+                        Google Developer Student Clubs are university based community groups for students interested in
+                        Google developer technologies. Students from all undergraduate or graduate programs with an
+                        interest in growing as a developer are welcome. By joining a GDSC, students grow their knowledge
+                        in a
+                        peer-to-peer learning environment and build solutions for local businesses and their community.
+                        GDSC
+                        Universitas Sriwijaya has been established since 2018 and continues to have a positive impact
+                        among
+                        developer students at the university.
+                    </p>
+                </div>
+                <img src="./src/images/core-team-now.png" alt="Core Team 2023" id="hero-img">
+            </article>
+
+            <article id="upcomingEvents" class="container">
+                <div class="content">
+                    <div class="header">
+                        <h2 class="title">Upcoming Events</h2>
+                        <p class="subtitle">Enhance yourself by attending our events led by experts</p>
+                    </div>
+                    <div class="events" id="events">
+                        <!-- * Each events card goes here -->
+                    </div>
+                    <div class="load-more">
+                        <button class="load-more-btn">Load More</button>
+                    </div>
+                </div>
+            </article>
+
+            <article id="organizer-section" class="organizer-container">
+                <div class="organizer-header">
+                    <h2 class="organizer-title">Organizer</h2>
+                    <p class="organizer-description">Meet the organizers behind GDSC Universitas Sriwijaya. Get to know
+                        the team working hard to make this chapter unforgettable!</p>
+                </div>
+                <div class="organizer-team" id="organizer-team">
+                    <!-- * Each members card goes here-->
+                </div>
+            </article>
+        </div>
+        <aside>
+            <div class="aside-photo">
+                <img src="./src/images/Universitas-Sriwijaya-Logo.png" alt="">
+            </div>
+            <div class="aside-content">
+                <h2>GDSC</h2>
+                <h3>Universitas Sriwijaya</h3>
+                <p>since 2017</p>
+                <p>1058 members</p>
+                <p>152 events</p>
+            </div>
+        </aside>
+
+        <!-- * Modal for aside on mobile -->
+        <div id="asideModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="aside-content-modal">
+                    <div class="aside-photo">
+                        <img src="./src/images/Universitas-Sriwijaya-Logo.png" alt="">
+                    </div>
+                    <div class="aside-content">
+                        <h2>GDSC</h2>
+                        <h3>Universitas Sriwijaya</h3>
+                        <p>since 2017</p>
+                        <p>1058 members</p>
+                        <p>152 events</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="asideToggleButton" class="floating-button">
+            <img src="./src/images/Universitas-Sriwijaya-Logo.png" alt="Aside Icon">
+        </button>
+    </main>
+
+    <footer id="footer" class="footer-container">
+        <div class="footer-content">
+            <img src="./src/images/logo-with-text-center.png" alt="Logo GDSC" class="logo">
+            <div class="social-icons">
+                <a href="#" class="social-icon linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <path
+                            d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon email">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="32" d="M112 160l144 112 144-112" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <path
+                            d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+                        <path
+                            d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <path
+                            d="M464 66.52A50 50 0 00414.12 17L97.64 16A49.65 49.65 0 0048 65.52V392c0 27.3 22.28 48 49.64 48H368l-13-44 109 100zM324.65 329.81s-8.72-10.39-16-19.32C340.39 301.55 352.5 282 352.5 282a139 139 0 01-27.85 14.25 173.31 173.31 0 01-35.11 10.39 170.05 170.05 0 01-62.72-.24 184.45 184.45 0 01-35.59-10.4 141.46 141.46 0 01-17.68-8.21c-.73-.48-1.45-.72-2.18-1.21-.49-.24-.73-.48-1-.48-4.36-2.42-6.78-4.11-6.78-4.11s11.62 19.09 42.38 28.26c-7.27 9.18-16.23 19.81-16.23 19.81-53.51-1.69-73.85-36.47-73.85-36.47 0-77.06 34.87-139.62 34.87-139.62 34.87-25.85 67.8-25.12 67.8-25.12l2.42 2.9c-43.59 12.32-63.44 31.4-63.44 31.4s5.32-2.9 14.28-6.77c25.91-11.35 46.5-14.25 55-15.21a24 24 0 014.12-.49 205.62 205.62 0 0148.91-.48 201.62 201.62 0 0172.89 22.95s-19.13-18.15-60.3-30.45l3.39-3.86s33.17-.73 67.81 25.16c0 0 34.87 62.56 34.87 139.62 0-.28-20.35 34.5-73.86 36.19z" />
+                        <path
+                            d="M212.05 218c-13.8 0-24.7 11.84-24.7 26.57s11.14 26.57 24.7 26.57c13.8 0 24.7-11.83 24.7-26.57.25-14.76-10.9-26.57-24.7-26.57zM300.43 218c-13.8 0-24.7 11.84-24.7 26.57s11.14 26.57 24.7 26.57c13.81 0 24.7-11.83 24.7-26.57S314 218 300.43 218z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon website">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <path
+                            d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z"
+                            fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+                        <path
+                            d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z"
+                            fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+                        <path
+                            d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="32" />
+                        <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"
+                            d="M256 48v416M464 256H48" />
+                    </svg>
+                </a>
+            </div>
+            <img src="./src/images/bevy.png" alt="Bevy" class="bevy-logo">
+            <p class="footer-text">Ⓒ 2024 All rights reserved GDSC Universitas Sriwijaya.</p>
+        </div>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

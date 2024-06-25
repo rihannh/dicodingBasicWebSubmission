@@ -1,0 +1,653 @@
+/* *Import Font (Product Sans) */
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-Regular.ttf") format("truetype");
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-Bold.ttf") format("truetype");
+     font-weight: bold;
+     font-style: normal;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-Italic.ttf") format("truetype");
+     font-weight: normal;
+     font-style: italic;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-BoldItalic.ttf") format("truetype");
+     font-weight: bold;
+     font-style: italic;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-Black.ttf") format("truetype");
+     font-weight: 900;
+     font-style: normal;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-BlackItalic.ttf") format("truetype");
+     font-weight: 900;
+     font-style: italic;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-Light.ttf") format("truetype");
+     font-weight: 300;
+     font-style: normal;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-LightItalic.ttf") format("truetype");
+     font-weight: 300;
+     font-style: italic;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-Medium.ttf") format("truetype");
+     font-weight: 500;
+     font-style: normal;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-MediumItalic.ttf") format("truetype");
+     font-weight: 500;
+     font-style: italic;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-Thin.ttf") format("truetype");
+     font-weight: 100;
+     font-style: normal;
+}
+@font-face {
+     font-family: "Product Sans";
+     src: url("./assets/fonts/ProductSans-ThinItalic.ttf") format("truetype");
+     font-weight: 100;
+     font-style: italic;
+}
+/* *Import Font (Product Sans) End */
+
+
+/* *Root Variable */
+:root {
+     --blue: #356ac3;
+     --red: #ea4335;
+     --green: #34a853;
+     --yelllow: #fbbc04;
+}
+
+* {
+     font-family: "Product Sans", sans-serif;
+     margin: 0;
+     padding: 0;
+}
+/* *Root Variable End */
+
+
+/* *Header */
+header {
+     padding: 20px 16px;
+     background-color: #fff;
+     border-bottom: 1px solid #e0e0e0;
+}
+
+nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+nav ul {
+     display: flex;
+     gap: 40px;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+
+nav img {
+     height: 48px;
+}
+
+nav li:first-child a {
+     color: var(--blue);
+}
+
+nav a {
+     text-decoration: none;
+     color: black;
+     font-size: 16px;
+}
+
+nav a:hover {
+     color: var(--blue);
+     text-shadow: 2px 2px 4px rgba(53, 106, 195, 0.5);
+}
+
+nav .login-search {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+
+nav .login-search a {
+     background-color: var(--blue);
+     color: white;
+     padding: 8px 20px;
+     border-radius: 8px;
+     transition: box-shadow 0.3s, transform 0.3s;
+}
+
+nav .login-search a:hover {
+     box-shadow: 0px 1px 1px rgba(53, 106, 195, 0.02),
+          0px 5px 4px rgba(53, 106, 195, 0.03),
+          0px 12px 9px rgba(53, 106, 195, 0.05),
+          0px 20px 15px rgba(53, 106, 195, 0.06),
+          0px 32px 24px rgba(53, 106, 195, 0.08);
+     transform: scale(0.9);
+}
+
+nav input {
+     border-radius: 8px;
+     border: 1px solid gray;
+     color: gray;
+     padding: 8px 20px;
+     font-size: 0.8rem;
+}
+
+nav .menu-icon {
+     display: none;
+     cursor: pointer;
+}
+
+nav .menu-icon svg {
+     width: 30px;
+     height: 30px;
+}
+/* *Header End*/
+
+
+/* *Main */
+main {
+     padding: 40px 16px;
+     display: flex;
+     gap: 24px;
+}
+
+#content {
+     flex: 80%;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     padding: 20px;
+     border-radius: 12px;
+}
+
+/* *Hero*/
+#hero {
+     display: flex;
+     gap: 24px;
+}
+
+.hero-content {
+     padding-top: 10px;
+}
+
+.hero-content h2 {
+     font-size: 1.8rem;
+}
+
+.hero-content p {
+     margin-top: 8px;
+}
+
+#hero-img {
+     width: 400px;
+     border-radius: 12px;
+}
+/* *Hero End*/
+
+/* *Aside and It's Modal*/
+aside {
+     flex: 20%;
+     padding: 40px 20px 80px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     border-radius: 12px;
+     height: fit-content;
+}
+
+.aside-photo {
+     width: fit-content;
+     margin: auto;
+}
+
+.aside-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 6px;
+}
+
+.modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+     background-color: #fefefe;
+     margin: 15% auto;
+     padding: 40px 20px 80px;
+     border: 1px solid #888;
+     width: 350px;
+     max-width: 600px;
+     height: fit-content;
+
+     border-radius: 10px;
+}
+
+.close-button {
+     color: #aaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+     color: var(--blue);
+     text-decoration: none;
+     cursor: pointer;
+}
+
+.aside-content-modal {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     gap: 5px;
+     margin-top: 10px;
+}
+
+.floating-button {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: var(--blue);
+     color: white;
+     border: none;
+     padding: 10px;
+     border-radius: 50%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     cursor: pointer;
+}
+
+.floating-button img {
+     width: 30px;
+     height: 30px;
+}
+/* *Aside and It's Modal End*/
+
+/* *Event */
+.container {
+     padding: 40px;
+     margin-top: 48px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.content {
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+}
+
+.header {
+     text-align: center;
+     margin-bottom: 32px;
+}
+
+.title {
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.subtitle {
+     font-size: 1rem;
+}
+
+.events {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 24px;
+     justify-content: space-evenly;
+}
+
+.event-card {
+     width: 100%;
+     max-width: 280px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     padding-bottom: 12px;
+     border-radius: 12px;
+     cursor: pointer;
+     transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+     transform: scale(1.1);
+}
+
+.event-image {
+     position: relative;
+     height: 256px;
+     overflow: hidden;
+     border-top-left-radius: 12px;
+     border-top-right-radius: 12px;
+}
+
+.event-image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.event-time {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     background-color: red;
+     color: white;
+     padding: 6px;
+     font-size: 0.875rem;
+     font-weight: medium;
+     text-align: center;
+}
+
+.event-details {
+     padding: 16px;
+     text-align: center;
+}
+
+.event-type {
+     background-color: yellow;
+     opacity: 0.8;
+     display: inline-block;
+     margin-top: 8px;
+     padding: 6px;
+     font-size: 0.75rem;
+     font-weight: medium;
+     color: black;
+     border-radius: 8px;
+}
+
+.event-name {
+     font-weight: bold;
+     margin-top: 8px;
+}
+
+.event-location {
+     font-size: 0.875rem;
+     margin-top: 12px;
+}
+
+.load-more {
+     display: flex;
+     justify-content: center;
+     padding-top: 24px;
+}
+
+.load-more-btn {
+     background-color: var(--blue);
+     color: white;
+     padding: 8px 20px;
+     border-radius: 8px;
+     transition: box-shadow 0.3s, transform 0.3s;
+}
+.load-more-btn:hover {
+     box-shadow: 0px 1px 1px rgba(53, 106, 195, 0.02),
+          0px 5px 4px rgba(53, 106, 195, 0.03),
+          0px 12px 9px rgba(53, 106, 195, 0.05),
+          0px 20px 15px rgba(53, 106, 195, 0.06),
+          0px 32px 24px rgba(53, 106, 195, 0.08);
+     transform: scale(0.9);
+}
+/* *Event Ennd*/
+
+
+/* *Organizer */
+.organizer-container {
+     padding: 40px;
+     margin-top: 48px;
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 1200px;
+}
+
+.organizer-header {
+     text-align: center;
+     margin-bottom: 32px;
+}
+
+.organizer-title {
+     font-size: 2rem;
+     font-weight: bold;
+}
+
+.organizer-description {
+     font-size: 1rem;
+     max-width: 600px;
+     margin: 16px auto 0;
+}
+
+.organizer-team {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 24px;
+     justify-content: center;
+}
+
+.organizer-team-member {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     flex: 1 0 21%;
+     max-width: 250px;
+     padding: 16px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     border-radius: 12px;
+     background-color: #ffffff;
+}
+
+.organizer-team-member img {
+     width: 128px;
+     height: 128px;
+     border-radius: 50%;
+     object-fit: cover;
+     overflow: hidden;
+}
+
+.organizer-team-member h3 {
+     font-weight: bold;
+     margin-top: 12px;
+}
+
+.organizer-team-member p {
+     font-size: 0.875rem;
+     margin-top: 8px;
+}
+/* *Organizer End */
+
+/* *Main End*/
+
+
+/* *Footer */
+.footer-container {
+     margin-top: 48px;
+     padding-top: 16px;
+     border-top: 1px solid #ddd;
+     text-align: center;
+}
+
+.footer-content {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 16px;
+}
+
+.logo {
+     height: 176px;
+     margin: 0 auto;
+}
+
+.social-icons {
+     display: flex;
+     justify-content: center;
+     gap: 8px;
+     margin: 16px 0 24px;
+}
+
+.social-icon {
+     width: 32px;
+     height: 32px;
+     padding: 8px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+footer .ionicon {
+     fill: white;
+}
+.linkedin {
+     background-color: var(--blue);
+     color: white;
+}
+
+.email {
+     background-color: var(--red);
+     color: white;
+}
+
+.instagram {
+     background-color: var(--yelllow);
+     color: white;
+}
+
+.discord {
+     background-color: var(--green);
+     color: white;
+}
+
+.website {
+     background-color: var(--blue);
+     color: white;
+}
+
+.social-icon:hover {
+     transform: scale(1.1);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bevy-logo {
+     height: 24px;
+     margin: 0 auto;
+}
+
+.footer-text {
+     margin: 28px 0;
+     color: #555;
+     font-size: 0.875rem;
+}
+/* *Footer End*/
+
+/* *Media Screen */
+@media (max-width: 1024px) {
+     nav .login-search {
+          display: none;
+     }
+}
+@media (max-width: 768px) {
+     nav img {
+          height: 28px;
+     }
+     nav ul {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          background-color: #fff;
+          position: absolute;
+          top: 100px;
+          left: 0;
+          gap: 0px;
+          padding: 10px 0;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     }
+
+     nav ul.show {
+          display: flex;
+     }
+
+     nav .menu-icon {
+          display: block;
+     }
+
+     nav .menu-icon svg {
+          width: 25px;
+          height: 25px;
+     }
+
+     nav ul li {
+          width: 100%;
+          text-align: center;
+          padding: 10px 0;
+     }
+
+     nav ul li a {
+          width: 100%;
+          padding: 10px 0;
+          display: block;
+     }
+
+     #hero {
+          flex-direction: column-reverse;
+     }
+
+     #hero-img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+     }
+
+     aside {
+          display: none;
+     }
+
+     #asideToggleButton {
+          display: block;
+     }
+}
+
+@media (min-width: 769px) {
+     .floating-button {
+          display: none;
+     }
+
+     .modal {
+          display: none;
+     }
+}
+/* *Media Screen End*/
